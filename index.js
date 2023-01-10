@@ -2,7 +2,7 @@ const http = require('http')
 const fs = require('fs')
 
 const requestListener = (req, res) => {
-    const data = fs.readFileSync('./index.html')
+    const data = fs.readFileSync('./public/index.html')
 
     res.end(data.toString());
 }
